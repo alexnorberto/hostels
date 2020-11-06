@@ -1,0 +1,344 @@
+html {
+    font-size: 16px;
+    position: relative;
+}
+
+body, h1, h2, h3 {
+    margin:0;
+    padding:0;
+    font-family: Oxygen, sans-serif;
+}
+
+/*HEADER*/
+header { background: white; }
+
+header div img {
+    display: block;
+    margin: 1rem auto;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    background: #54185f;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #5d2e65;
+}
+
+
+/*MAIN*/
+main {
+    max-width: 100%;
+}
+
+/* ARTICLE */
+
+article, section, .sect {
+    margin: 0px;
+    padding: 2rem;
+}
+
+article {
+    clear: both;
+    background: #f0f0f0;
+}
+
+article p, h1 {
+    color: purple;
+    text-align: center;
+}
+
+.section-button {
+    display: block;
+    width: 12rem;
+    height: 3rem;
+    margin: 0 auto;
+    background: #49aab2;
+    border-radius: .5rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.section-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* SECTION 1 */
+
+.sect1 {
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.sect2 {
+    background: #fff;
+    text-align: left;
+    margin: auto;
+}
+
+section div {
+    margin-bottom: 4rem;
+}
+
+section .section-button {
+    margin: 0;
+}
+
+h2, h3 {
+    color: purple;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    clear: both;
+}
+
+footer ul {
+    background: #333e55;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: .3rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer ul li {
+    display: inline;
+    margin: .5rem;
+}
+
+footer div {
+    margin: 0;
+    background: #242d40;
+    color: #5e6779;
+    text-align: center;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+h4 { margin: 0; }
+
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+
+@media screen and (min-width: 600px) {
+    
+    header {
+        position: relative;
+        height: 6rem;
+    }
+    
+    header div img {
+        float: left;
+    }
+    
+    nav ul {
+        float: right;
+        width: 60%;
+        background: white;
+        color: purple;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+    }
+    
+    nav ul li {
+        display: inline;
+        background: white;
+        color: purple;
+        font-size: .9rem;
+    }
+    
+    ul li:hover {
+        background: #5d2e65;
+        color: white;
+        transition: background .3s, color .3s;
+    }
+   
+/* ARTICLE */
+
+    article {
+        clear: both;
+        background: #54185f;
+        display: block;
+    }
+    
+    article:before {
+        content: url(../images/icon_play.svg);
+        display: block;
+        margin: auto;
+        width: 5rem;
+        
+    }
+
+    article p, h1 {
+        color: white;
+        text-align: center;
+    }
+    
+    
+    /* SECTION 1 */
+    
+    section {
+        display: inline-block;
+    }
+
+    .sect1 div {
+        float: left;
+        width: 48%;
+        background: #f0f0f0;
+        margin-bottom: 2rem;
+    }
+    
+    .sect1 div:nth-child(odd) {
+        margin: 0 4% 0 0;
+    }
+    
+    .sect2 {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+@media screen and (min-width: 800px) {
+    
+  
+/* ARTICLE */
+
+    article {
+        clear: both;
+        background: url(../images/bg_topo_1198x670.jpg), purple;
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: block;
+        height: 25rem;
+    }
+    
+    article:before {
+        margin: 10rem auto 0;
+    }
+    
+}
+
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+@media screen and (min-width: 1100px) {
+    
+  
+/* ARTICLE */
+
+    article {
+        clear: both;
+        background: url(../images/bg_topo_1600x1374.jpg), purple;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        display: block;
+        height: 45rem;
+    }
+    
+    article:before {
+        margin: 30rem auto 0;
+    }
+
+    
+    /* SECTION 1 */
+    
+
+    .sect1 div {
+        width: 22%;
+    }
+    
+    .sect1 div:nth-child(odd) {
+        margin: 0 0 0 0;
+    }
+    
+    .sect1 div:nth-child(n+2) {
+        margin: 0 0 0 4%;
+    }
+    
+    
+/*    SECTION 2 */
+
+    .sect2 div {
+        float: left;
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+    
+    .sect2 div:nth-child(odd) {
+        margin: 0 4% 0 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
